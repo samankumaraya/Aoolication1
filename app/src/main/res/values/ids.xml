@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="name_id" type="id" />
+    <item name="email_id" type="id" />
+    <item name="cgpa_id" type="id" />
+    <item name="textView_id" type="id" />
+    <item name="button_id" type="id" />
+</resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,11 +15,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
    private Button button;
    private TextView textView;
 
+   public static final String My_TAG = "the_custom_message";
+    private Object v;
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i(My_TAG, "onCreate");
 
         name = (EditText) findViewById(R.id.name_id);
         email = (EditText) findViewById(R.id.email_id);
@@ -28,8 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         button = (Button) findViewById(R.id.button_id);
 
-    }
 
+    }
     @Override
     public void onClick(View v) {
         String name1 = name.getText().toString();
